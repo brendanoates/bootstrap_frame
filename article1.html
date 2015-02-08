@@ -63,6 +63,30 @@
 
                 </div>
             </div>
+            <div class="col-lg-3">
+                <div class="list-group">
+                    <a class="list-group-item active" href="#">
+                        <h4 class="list-group-item-heading">First Article</h4>
+                        <p class="list-group-item-text">This text should be a tempter for the first article page.
+                        </p>
+                    </a>
+                    <a class="list-group-item" href="article2.html">
+                        <h4 class="list-group-item-heading">Second Article</h4>
+                        <p class="list-group-item-text">This text should be a tempter for the second article page.
+                        </p>
+                    </a>
+                    <a class="list-group-item" href="article3.html">
+                        <h4 class="list-group-item-heading">Third Article</h4>
+                        <p class="list-group-item-text">This text should be a tempter for the third article page.
+                        </p>
+                    </a>
+                    <a class="list-group-item" href="article4.html">
+                        <h4 class="list-group-item-heading">Fourth Article</h4>
+                        <p class="list-group-item-text">This text should be a tempter for the fourth article page.
+                        </p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="navbar navbar-default navbar-fixed-bottom">
@@ -75,18 +99,39 @@
     <div class="modal fade" id="contact" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h4>Contact Carley</h4>
-                </div>
-                <div class="modal-body">
-                    body of contact form
-                </div>
-                <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss = "modal">Close</a>
-                    <a class="btn btn-primary" data-dismiss = "modal">Send</a>
-                </div>
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4>Contact Carley</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="contact-name" class="col-lg-2 control-label">Name:</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="col-lg-2 control-label">Email:</label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="contact-email" placeholder="name@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" class="col-lg-2 control-label">Message:</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" id="contact-message" rows="8"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a class="btn btn-default" data-dismiss = "modal">Close</a>
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
