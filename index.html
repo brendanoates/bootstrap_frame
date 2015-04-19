@@ -2,16 +2,16 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Put site name here</title>
+    <title>Carley Ma</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar navbar-default navbar-static-top">
         <div class="container">
-            <a href="index.html" class="navbar-brand">Put a title here</a>
+            <a href="index.html" class="navbar-brand">Carley Ma</a>
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -38,7 +38,7 @@
     <div class="container">
         <div class="jumbotron">
             <div class="text-center">
-                <h1>Welcome to my mobile friendly site</h1>
+                <h1>Welcome to my site</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
                     viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus
                     mattis, vel posuere lorem molestie. Aenean mi sapien, tincidunt sed interdum vitae, semper ac dui.
@@ -97,7 +97,7 @@
     <div class="modal fade" id="contact" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form class="form-horizontal">
+                <form class="form-horizontal" name="contactform" method="post" action="process.php">
                     <div class="modal-header">
                         <h4>Contact Carley</h4>
                     </div>
@@ -105,26 +105,27 @@
                         <div class="form-group">
                             <label for="contact-name" class="col-lg-2 control-label">Name:</label>
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Full Name" required="true">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="contact-email" class="col-lg-2 control-label">Email:</label>
                             <div class="col-lg-10">
-                                <input type="email" class="form-control" id="contact-email" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="contact-email" placeholder="name@example.com" required="true">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="contact-message" class="col-lg-2 control-label">Message:</label>
                             <div class="col-lg-10">
-                                <textarea class="form-control" id="contact-message" rows="8"></textarea>
+                                <textarea class="form-control" id="contact-message" rows="8" required="true"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="modal-footer">
                         <a class="btn btn-default" data-dismiss = "modal">Close</a>
-                        <button class="btn btn-primary" type="submit">Send</button>
+                        <button type="submit" value="Submit" class="btn btn-custom pull-right">Send!</button>
+
                     </div>
                 </form>
             </div>
@@ -133,5 +134,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>            </div>
+
 </body>
 </html>
