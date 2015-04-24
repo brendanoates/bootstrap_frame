@@ -5,135 +5,257 @@
     <title>Carley Ma</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">Carley Ma</a>
-            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse navHeaderCollapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a> </li>
-                    <li><a href="#contact" data-toggle="modal">Contact</a> </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b> </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Twitter</a> </li>
-                            <li><a href="#">Facebook</a> </li>
-                            <li><a href="#">Google+</a> </li>
-                            <li><a href="#">Instagram</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="index.html">About</a> </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
+<!--
+    This code is for the navbar at the top of the page and is common to all pages
+-->
+
+<div class="navbar navbar-default navbar-static-top">
     <div class="container">
-        <div class="jumbotron">
-            <div class="text-center">
-                <h1>Welcome to my site</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
-                    viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus
-                    mattis, vel posuere lorem molestie. Aenean mi sapien, tincidunt sed interdum vitae, semper ac dui.
-                    Aliquam fringilla nibh eu mi pharetra, sed vehicula orci ornare. Phasellus vulputate, urna quis .
-                </p>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-via="BirthWithCarley" data-size="large">Tweet</a>
-            </div>
+        <a href="index.html" class="navbar-brand">Carley Ma</a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#contactModal" data-toggle="modal">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Google+</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </li>
+                <li><a href="#aboutModal" data-toggle="modal">About</a></li>
+            </ul>
         </div>
     </div>
+</div>
+
+<!--
+    This code is for the home page only
+-->
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="text-center">
+            <h1>Welcome to Carley Ma</h1>
+
+            <p>I am an independent BWY (British Wheel of Yoga), Sitaram Partnership teacher and student midwife based in
+                North Somerset. I specialise in yoga for women and pregnancy yoga.</p>
+
+            <p>I also teach womens yoga workshops throughout the country at special events and festivals.</p>
+
+            <p>I accept a limited number of 1-to-1 students for individual yoga tuition.</p>
+
+            <p>If this website doesn't give you all the details you need, please feel free to <a href="#contactModal"
+                                                                                                 data-toggle="modal">contact
+                me</a> for further
+                information.</p>
+            </p>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="BirthWithCarley"
+               data-size="large">Tweet</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3><a href="article1.html">Mums and Babies</a></h3>
+            <img src="img/mumsandbabies.jpg" class="featuredImg" width="50%">
+
+            <p>I am not currently teaching weekly Mum's and babies yoga classes as I am concentrating on the midwifery
+                degree.
+
+            </p>
+            <a href="article1.html" class="btn btn-default">Read More</a>
+        </div>
+        <div class="col-md-4">
+            <h3><a href="article2.html">Second Article</a></h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
+                viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus
+                mattis, vel posuere lorem molestie. Aenean mi sapien, tincidunt sed interdum vitae, semper ac dui.
+                Aliquam fringilla nibh eu mi pharetra, sed vehicula orci ornare. Phasellus vulputate, urna quis .
+            </p>
+            <a href="article2.html" class="btn btn-default">Read More</a>
+        </div>
+        <div class="col-md-4">
+            <h3><a href="article3.html">Third Article</a></h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
+                viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus
+                mattis, vel posuere lorem molestie. Aenean mi sapien, tincidunt sed interdum vitae, semper ac dui.
+                Aliquam fringilla nibh eu mi pharetra, sed vehicula orci ornare. Phasellus vulputate, urna quis .
+            </p>
+            <a href="article3.html" class="btn btn-default">Read More</a>
+        </div>
+        <div class="col-md-4">
+            <h3><a href="article4.html">Fourth Article</a></h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
+                viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus
+                mattis, vel posuere lorem molestie. Aenean mi sapien, tincidunt sed interdum vitae, semper ac dui.
+                Aliquam fringilla nibh eu mi pharetra, sed vehicula orci ornare. Phasellus vulputate, urna quis .
+            </p>
+            <a href="article4.html" class="btn btn-default">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!--
+    code from this point should be common to all pages
+-->
+
+<div class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3><a href="article1.html">First Article</a></h3>
-                <img src="img/puppy-june.jpg" class="featuredImg" width="50%">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
-                    viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus.
-                </p>
-                <a href="article1.html" class="btn btn-default">Read More</a>
-            </div>
-            <div class="col-md-4">
-                <h3><a href="article2.html">Second Article</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
-                    viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus
-                    mattis, vel posuere lorem molestie. Aenean mi sapien, tincidunt sed interdum vitae, semper ac dui.
-                    Aliquam fringilla nibh eu mi pharetra, sed vehicula orci ornare. Phasellus vulputate, urna quis .
-                </p>
-                <a href="article2.html" class="btn btn-default">Read More</a>
-            </div>
-            <div class="col-md-4">
-                <h3><a href="article3.html">Third Article</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
-                    viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus
-                    mattis, vel posuere lorem molestie. Aenean mi sapien, tincidunt sed interdum vitae, semper ac dui.
-                    Aliquam fringilla nibh eu mi pharetra, sed vehicula orci ornare. Phasellus vulputate, urna quis .
-                </p>
-                <a href="article3.html" class="btn btn-default">Read More</a>
-            </div>
-            <div class="col-md-4">
-                <h3><a href="article4.html">Fourth Article</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nulla ac libero semper, eget
-                    viverra dui aliquet. Ut imperdiet vulputate magna eu sodales. Aliquam tincidunt elit non lectus
-                    mattis, vel posuere lorem molestie. Aenean mi sapien, tincidunt sed interdum vitae, semper ac dui.
-                    Aliquam fringilla nibh eu mi pharetra, sed vehicula orci ornare. Phasellus vulputate, urna quis .
-                </p>
-                <a href="article4.html" class="btn btn-default">Read More</a>
-            </div>
-        </div>
+        <p class="navbar-text pull-left">Site built by <a href="http://goodnproper.co.uk" target="_blank">Edertz</a></p>
+        <a href="https://twitter.com/share" class="navbar-btn twitter-share-button pull-right"
+           data-via="BirthWithCarley" data-size="large"></a>
     </div>
-    <div class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container">
-            <p class="navbar-text pull-left">Site built by <a href="http://goodnproper.co.uk" target="_blank">Edertz</a> </p>
-            <a href="https://twitter.com/share" class="navbar-btn twitter-share-button pull-right" data-via="BirthWithCarley" data-size="large"></a>
-        </div>
-    </div>
+</div>
 
-    <div class="modal fade" id="contact" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form class="form-horizontal" name="contactform" method="post" action="process.php">
-                    <div class="modal-header">
-                        <h4>Contact Carley</h4>
+<div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="contactModalLabel">Please complete the form below to contact Carley Ma</h3>
+
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal col-sm-12" method='post' action='#' id='contact_form'>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control required name" placeholder="Your name" data-placement="top"
+                               data-trigger="manual"
+                               data-content="Must be at least 3 characters long, and must only contain letters."
+                               type="text"/>
                     </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="contact-name" class="col-lg-2 control-label">Name:</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="contact-name" placeholder="Full Name" required="true">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-email" class="col-lg-2 control-label">Email:</label>
-                            <div class="col-lg-10">
-                                <input type="email" class="form-control" id="contact-email" placeholder="name@example.com" required="true">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-message" class="col-lg-2 control-label">Message:</label>
-                            <div class="col-lg-10">
-                                <textarea class="form-control" id="contact-message" rows="8" required="true"></textarea>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" placeholder="Your message here.." data-placement="top"
+                                  data-trigger="manual"></textarea>
                     </div>
-
-                    <div class="modal-footer">
-                        <a class="btn btn-default" data-dismiss = "modal">Close</a>
-                        <button type="submit" value="Submit" class="btn btn-custom pull-right">Send!</button>
-
+                    <div class="form-group">
+                        <label>E-Mail</label>
+                        <input class="form-control required email"
+                               placeholder="email@you.com (so that we can contact you)" data-placement="top"
+                               data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)"
+                               type="text"/>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success center-block">Submit</button>
+                        <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not
+                            valid.</p>
                     </div>
                 </form>
             </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            </div>
         </div>
+    </div>
+</div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>            </div>
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="abouttModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="aboutModalLabel">About Carley Ma</h3>
+
+            </div>
+            <div class="modal-body">
+                <p>From a foundation of intellectual study, martial arts and aerobic fitness training, I encountered
+                    yoga
+                    in my early twenties when pregnant with my first child; I found yoga to be an effective and gentle
+                    way
+                    to maintain a healthy environment for my unborn baby and myself. I soon discovered that yoga is much
+                    greater than a 'keep fit' method. Continuing with over a decade of practice and study, I am
+                    deepening
+                    the understanding that yoga practice is a way of getting to know body, mind and the energy (prana)
+                    which
+                    is interwoven through the very fabric of existence. Yoga supports me in acknowledging strengths and
+                    weaknesses, to maintain balance in my life, to observe how I can help myself through the challenges
+                    met
+                    in everyday situations, yoga percolates through all my relationships and encounters. Yoga
+                    beautifully
+                    and gracefully reveals the spirit which connects all. I have been lucky to meet and study with some
+                    wonderfully inspiring teachers and I honour them and their teachers, for enabling the vibrant
+                    current of
+                    yoga to keep flowing.</p>
+                <h4>Qualifications and Training</h4>
+                <p>Completing a combined honours degree in Human Biology and Applied Psychology in 1995 sustained my
+                    desire
+                    to understand the science of body and mind and how they might interact to influence our state of
+                    health.
+                    During these formal studies I suspected that the western scientific viewpoint might be missing
+                    something, it was not a holistic view of reality and I continued to investigate esoteric subjects
+                    alongside conventional teachings. While at University, I took courses in Buddhist meditation,
+                    Gnostic
+                    psychology amongst others, my university final dissertations concerned complementary therapy. After
+                    graduation my interest in holistic approaches to health and self understanding grew. The discovery
+                    and
+                    immediate trust of yoga in 1999 was intuitive and definite, and I have no doubt that this path is
+                    worth
+                    a lifetime of exploration.
+                </p>
+                <p>I completed the 3-year British Wheel of Yoga (BWY) Teaching Diploma in June 2008. The BWY are
+                    recognised
+                    by the Central Council for Physical Recreation (CCPR) and Sport England as the national Governing
+                    Body
+                    for Yoga in the UK and provide the hightest level of qualification for yoga teachers (NVQ Level 4) .
+                    I
+                    consider the BWY to offer the most comprehensive yoga teacher training courses available, and I was
+                    blessed to be able to train with Derek Thorne. I am committed to my continuous professional
+                    development
+                    regulated by the BWY and my teaching benefits from the wide range of high quality training
+                    opportuinites
+                    provided by the BWY as well as trainings from outside of the BWY.
+                </p>
+                <p>
+                    Additional training in pregnancy and postnatal yoga was directed by Uma Dinsmore-Tuli (Sitaram
+                    Partnership). This training is equivalent to the BWY Post-Diploma Module for yoga in pregnancy, and
+                    I
+                    have attended update training days with BWY pregnancy and postnatal module tutor Wendy Teasdill.
+                </p>
+                <p>
+                    Uma Dinsmore-Tuli's teaching is a dominant influence in my approach to hatha yoga. I attend her Womb
+                    Yoga classes in Bristol and eagerly await publication of her new book Yoni Shakti Tantra.
+                </p>
+                <p>
+                    Derek Thorne guided my initial teacher training and as my personal teacher he continues to guide me
+                    through the profound teachings of jnana yoga. As a member of the YogaLiving Community Ashram, my
+                    personal yoga practice is supported by association with regular satsang and active participation in
+                    the
+                    vibrant creative energy of YogaLiving.
+                </p>
+                <p>
+                    I have been teaching yoga classes in my community since 2006 and love every minute of it! You are
+                    welcome to join me and discover yoga for your Self.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/carleys.js"></script>
 
 </body>
 </html>
