@@ -1,5 +1,6 @@
 body {
     margin-bottom: 60px;
+    color: #1e055a;
 }
 .page-header {
     margin-top: 0;
@@ -17,4 +18,12 @@ h1 .btn {
 }
 #contact_form {
     margin:5px;
+}
+.article_image {
+    float: left;
+    margin-right: 25px;
+}
+
+a {
+    color: #1e055a;
 }
