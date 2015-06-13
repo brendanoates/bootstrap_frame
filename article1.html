@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>Carley Ma</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-
 <!--
     This code is for the navbar at the top of the page and is common to all pages
 -->
 
 <div class="navbar navbar-default navbar-static-top">
     <div class="container">
-        <a href="index.html" class="pull-left"><img src="img/carleymalogo.jpg"></a>
+        <a href="index.html" class="pull-left"><img src="img/carleymalogo.jpg" alt="logo"></a>
         <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -26,10 +26,10 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="#contactModal" data-toggle="modal">Contact</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b> </a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <em class="caret"></em> </a>
                     <ul class="dropdown-menu">
-                        <li><a href="https://twitter.com/carleyoates" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.facebook.com/pages/Carley-Yoga-Ma/195593230588572" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/carleyoates" target="_blank" title="twitter">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/pages/Carley-Yoga-Ma/195593230588572" target="_blank" title="Facebook">Facebook</a></li>
                     </ul>
                 </li>
                 <li><a href="#aboutModal" data-toggle="modal">About</a></li>
@@ -40,6 +40,7 @@
 <!--
 end of navbar code
 -->
+
 <!--
  code for page only
 -->
@@ -54,7 +55,7 @@ end of navbar code
                         </h3>
                     </div>
 
-                    <p><img src="img/mumsandbabies.jpg" class="img-responsive" id="article_image_1">
+                    <p><img src="img/mumsandbabies.jpg" class="img-responsive" id="article_image_1" alt="mums and babies">
 
                         Coming Soon ...
 
@@ -97,10 +98,9 @@ end of navbar code
 
 <div class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
-        <p class="navbar-text pull-left">Site built by <a href="http://goodnproper.co.uk" target="_blank">Edertz</a>
-        </p>
+        <p class="navbar-text pull-left">Site built by <a href="http://goodnproper.co.uk" target="_blank">Edertz</a></p>
         <a href="https://twitter.com/share" class="navbar-btn twitter-share-button pull-right"
-           data-via="BirthWithCarley" data-size="large"></a>
+           data-via="BirthWithCarley" data-size="large" title="twitter"></a>
     </div>
 </div>
 
@@ -116,23 +116,23 @@ end of navbar code
             <div class="modal-body">
                 <form class="form-horizontal col-sm-12" method='POST' action='process.php' id='contact_form'>
                     <div class="form-group">
-                        <label>Name</label>
+                        <label for="contact_form_name">Name</label>
                         <input class="form-control required name" placeholder="Your name" data-placement="top"
                                data-trigger="manual"
                                data-content="Must be at least 3 characters long, and must only contain letters."
-                               type="text" id='contact_form_name' name='contact_form_name'>
+                               type="text" id='contact_form_name' name='contact_form_name' title="name">
                     </div>
                     <div class="form-group">
-                        <label>Message</label>
+                        <label for="contact_form_message">Message</label>
                         <textarea class="form-control" placeholder="Your message here.." data-placement="top"
                                   data-trigger="manual" id='contact_form_message' name="contact_form_message"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>E-Mail</label>
+                        <label for="contact_form_email">E-Mail</label>
                         <input class="form-control required email"
                                placeholder="email@you.com (so that we can contact you)" data-placement="top"
                                data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)"
-                               type="text" id='contact_form_email' name="contact_form_email"/>
+                               type="text" id='contact_form_email' name="contact_form_email" title="email"/>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-success center-block">Submit</button>
@@ -174,15 +174,94 @@ end of navbar code
                     With sensitive and nurturing classes, Carley has supported hundreds of women to enjoy healthy
                     pregnancies and positive birth experiences. Carley is currently offering weekly pregnancy yoga
                     classes for women and monthly antenatal classes for couples.
-                </p><h4>Qualifications & Experience</h4>
-
+                </p>
+                <h4>Qualifications & Experience</h4>
                 <p>
                     BSc.Hons. Midwifery (UWE, Bristol / RUH Trust) due to complete 2016<br>
                     Pregnancy and Postnatal Yoga Update Training (BWY, Wendy Teasdill) 2011<br>
                     Pregnancy and Postnatal Yoga Teaching Diploma (Sitaram Partnership, Uma Dinsmore-Tuli) 2009<br>
                     British Wheel of Yoga Teaching Diploma (BWY, Derek Thorne) 2008<br>
                     Birthing and parenting 3 wonderful Children with my husband (1999-present)<br>
-                    BSc.Hons. Human Biology & Applied Psychology (Aston University) 1995</p>
+                    BSc.Hons. Human Biology & Applied Psychology (Aston University) 1995
+                </p>
+                <h4>Testimonials</h4>
+                <p>
+                    Every woman has such a unique experience of pregnancy and birth which can have a profound impact on
+                    her experience of mothering.  Here is just some of the recent feedback Carley has received from
+                    women she has worked with:
+                </p>
+                <p>
+                    A mother who had a traumatic birth with her first baby……
+                </p>
+                <p class="highlightedQuote">
+                    “thank you for the wonderful classes and your support through pregnancy. It was fantastic to have
+                    time to focus on myself and the baby and the classes were really helpful… it was such a different
+                    experience to having my first, so calm but incredibly precious. I felt awake and able to bond and
+                    have wonderful skin-to-skin straight after he was born. He latched on and is doing really well
+                    breastfeeding.”
+                </p>
+                <p>
+                    A mother who attended yoga classes with Carley before she was pregnant and during both pregnancies…
+                </p>
+                <p class="highlightedQuote">
+                    “So thank you for all the yoga and breathing techniques you have taught me over the years, they
+                    really work!”
+                </p>
+                <p>
+                    A mother whose labour was induced in her first pregnancy…
+                </p>
+                <p class="highlightedQuote">
+                    “Thanks for all your support… It turned out that my body did understand how to go into labour
+                    naturally!!!”
+                </p>
+                <p>
+                    A mother on birthing her first baby…
+                </p>
+                <p class="highlightedQuote">
+                    “Thanks for your yoga teaching and such lovely classes.  The breathing techniques really helped, the
+                    midwives were amazed at how calm I was throughout the labour.”
+                </p>
+                <p>
+                    A mother who was due to have her labour induced for medical reasons, but she began labour naturally
+                    and gave birth quickly…
+                </p>
+                <p class="highlightedQuote">
+                    ”Breathing & mindfulness definitely helped me through the pain!  I will be continuing with the
+                    breathing techniques while breastfeeding and I’m going to keep doing the Yoga Nidra to help me
+                    relax.”
+                </p>
+                <p>
+                    A couple who Carley supported with birth preparation plans for a homebirth…
+                </p>
+                <p class="highlightedQuote">
+                    ”Thanks for the really nice encouragement you gave us, we both really appreciated it.  The birth was
+                    quick, I breathed loudly through the intense contractions.  Natural 3rd stage and no stitching
+                    &#9786”
+                </p>
+                <p>
+                    A mother who gave birth to her baby weighing 11lb14…
+                </p>
+                <p class="highlightedQuote">
+                    “the yoga really helped me stay focused and controlled”
+                </p>
+                <p>
+                    A mother who birthed her baby in hospital under consultant-led care…
+                </p>
+                <p class="highlightedQuote">
+                    “I would like to thank you for everything we did in the yoga classes it was really useful during
+                    labour and I spent the majority of my time on hands and knees and using the ball. It helped with the
+                    contractions and moving things along.”
+                </p>
+                <p>
+                    A mother who birthed her first baby at home…
+                </p>
+                <p class="highlightedQuote">
+                    ”I spent most of early labour using lots of breathing and leaning over the birthing ball once the
+                    pressure was too much to sit down. Once I was in established I took some gas and air but focused
+                    mainly on the breathing and I think I did quite well &#9786 We are so happy we were able to birth
+                    him at home in such a wonderful environment, currently he is a very peaceful little boy and I
+                    believe his entry to this world has helped that.”
+                </p>
             </div>
             <div class="modal-footer">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>

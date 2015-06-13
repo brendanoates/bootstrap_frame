@@ -25,5 +25,15 @@ h1 .btn {
 }
 
 a {
-    color: #1e055a;
+    color: #2e1693;
+}
+.text_link {
+    color: #179342;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.highlightedQuote {
+    background-color: Cornsilk;
+    font-style: italic;
 }
